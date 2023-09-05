@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <style type="text/css">
+        html{
+
+/* ===style=== */
+
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: black;
+
+/* ===style=== */
+
+
+/* ===colors=== */
+
+    --purple: #42296b;
+    --yellow: #fff75a;
+    --pink: #8c6b8c;
+    --l-pink: #6f4e8e;
+    --cream: #f7ad94;
+    --d-cream: #e88473;
+    --d-blue: #1d1942;
+    --d-red: #321018;
+    --d-light: #f77363;
+
+/* ===colors=== */
+
+}
+
+html *,
+html *::before,
+html *::after{
+
+box-sizing: inherit;
+
+}
+
+body{
+
+/* ===style=== */
+
+    margin: 0;
+    width: 34em;
+    height: 34em;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-color: var(--d-light);
+    animation-name: body , d-light ;
+    animation-duration: .24s , .35s ;
+    animation-direction: alternate , normal ;
+    animation-iteration-count: infinite , infinite ;
+    animation-timing-function: ease-in-out , linear ;
+
+/* ===style=== */
+
+
+background-image: 
+
+
+/* body-r====== */
+
+    radial-gradient( 27.6em 35em at center 169% , transparent 90% , var(--purple) 90.3% , var(--purple) 94% , var(--d-light) 94.3% ) ,
+
+/*======body-r*/
+
+
+/* cape====== */
+
+    radial-gradient( circle at center 12.5% , var(--purple) 43% , transparent 43.3%  ) ,
+
+/*======cape*/
+
+
+/* body====== */
+
+    radial-gradient( 27.6em 35em at center 169% , var(--yellow) 43.2% , var(--pink) 43.5% , var(--pink) 90% ,  transparent 92.4% ) ;
+
+/*======body*/
+
+
+background-size:
+
+
+/* body-r====== */
+
+    100% 20em ,
+
+/*======body-r
+
+
+/* cape====== */
+
+    34.5em 29em ,
+
+/*======cape*/
+
+
+/* body====== */
+
+    100% 20em ;
+
+/*======body*/
+
+
+background-position:
+
+
+/* body-r====== */  
+
+    center 100% ,
+
+/*======body-r*/
+
+
+/* cape====== */  
+
+    center 300% ,
+
+/*======cape*/
+
+
+/* body====== */  
+
+    center 100% ;
+
+/*======body*/
+
+
+}
+
+
+@keyframes body {
+
+100%{
+
+    background-position:
+
+
+    /* body-r====== */  
+
+        center 102.5% ,
+
+    /* ======body-r */
+
+
+    /* cape====== */  
+
+        center 308% ,
+
+    /* ======cape */
+
+
+    /* body====== */  
+
+        center 102.5% ;
+
+    /* ======body */
+
+}
+}   
+
+@keyframes d-light {
+
+50%{
+
+    --d-light: #f77b39;
+    --purple: #29316b;
+    --pink: #637b9c;
+    --l-pink: #637b9c;
+    --d-cream: #d19388;
+    --cream: #e7b59c;
+    --d-blue: #101842;
+    --d-red: #28181c;
+    --yellow: #fffc63;
+
+}
+
+100%{
+
+    --d-light: #f77b39;
+    --purple: #353259;
+    --pink: #7b737b;
+    --l-pink: #68658b;
+    --d-cream: #dd8c5a;
+    --cream: #f7b57b;
+    --d-blue: #181839;
+    --d-red: #2c120b;
+    --yellow: #fff752;
+
+}
+}
+
+body::before{
+
+/* ===style=== */
+
+    top: 11.8%;
+    content: "";
+    width: 12.35em;
+    height: 24.4em;
+    position: absolute;
+    background-repeat: no-repeat;
+    animation: head .6s infinite linear;
+
+/* ===style=== */
+
+
+
+background-image:
+
+
+/* brow-l-left====== */
+
+    linear-gradient( 45deg , transparent 18% , var(--l-pink) 18.5% , var(--l-pink) 20.6% , transparent 21% ) ,
+
+/* ======brow-l-left */
+
+
+/* brow-l-right====== */
+
+    linear-gradient( -45deg , transparent 18% , var(--l-pink) 18.5% , var(--l-pink) 20.6% , transparent 21% ) ,
+
+/* ======brow-l-right */
+
+
+/* brow-r-left====== */
+
+    radial-gradient( 8.375em 10.25em at center 134% , transparent 17% , var(--l-pink) 18% , var(--l-pink) 18.7% , transparent 19.2% ) ,
+
+/* ======brow-r-left */
+
+
+/* brow-r-right====== */
+
+    radial-gradient( 8.375em 10.25em at center 134% , transparent 17% , var(--l-pink) 18% , var(--l-pink) 18.7% , transparent 19.2% ) ,
+
+/* ======brow-r-right */
+
+
+/* mask-r====== */
+
+    radial-gradient( 17.8125em 22.4375em at center -89% , transparent 39.5% , var(--d-blue) 40% , var(--d-blue) 45% ,transparent 45.5% ) ,
+
+/* ======mask-r */
+
+
+/* mask-r-2====== */
+
+    radial-gradient( 15.125em 18.0625em at center -50.5% , transparent 42.5% , var(--d-blue) 43% ,var(--d-blue) 46.5% , transparent 47% ) ,
+
+/* ======mask-r-2 */
+
+
+/* nose-l====== */
+
+    radial-gradient( 39.4375em 13.6875em at 716% -83% , var(--d-blue) 41% , transparent 41.5% ) ,
+
+/* ======nose-l */
+
+
+/* nose-r====== */
+
+    radial-gradient( 39.4375em 13.6875em at -613% -83% , var(--d-blue) 41% , transparent 41.5% ) ,
+
+/* ======nose-r */
+
+
+/* mask-r-shasow====== */
+
+    radial-gradient( 15.125em 18.0625em at center -50.5% , transparent 42.5% , var(--d-cream) 43% ,var(--d-cream) 46.5% , transparent 47% ) ,
+
+/* ======mask-r-shasow */
+
+
+/* nose-l-shadow====== */
+
+    radial-gradient( 39.4375em 13.6875em at 716% -83% , var(--d-cream) 41% , transparent 41.5%) ,
+
+/* ======nose-l-shadow */
+
+
+/* nose-r-shadow====== */
+
+    radial-gradient( 39.4375em 13.6875em at -613% -83% , var(--d-cream) 41% , transparent 41.5% ) ,
+
+/* ======nose-r-shadow */
+
+
+/* face====== */
+
+    radial-gradient( 16.125em 24.4375em at center -207% , transparent 44% , var(--cream) 45%  ) ,
+
+/* ======face */
+
+
+/* mouth====== */
+
+    radial-gradient(  var(--d-red) 60% , transparent 64% ) ,
+
+/* ======mouth */
+
+
+/* chin====== */
+
+    radial-gradient( 11.6875em 24.125em at center -195% , var(--cream) 60% , transparent 60.5%  ) ,
+
+/* ======chin */
+
+
+/* eye-l====== */
+
+    radial-gradient( 2.83em 2.9em at 32% center , var(--yellow) 60% ,  transparent 64% ) ,
+
+/* ======eye-l */
+
+
+/* eye-r====== */
+
+    radial-gradient( 2.83em 2.9em at 69% center , var(--yellow) 60% ,  transparent 64% ) ,
+
+/* ======eye-r */
+
+
+/* mask====== */
+
+    linear-gradient( var(--d-blue) , var(--d-blue) 0 ) ,
+
+/* ======mask */
+
+
+/* head====== */
+
+    radial-gradient( circle at center bottom , var(--d-blue) 50.5%, var(--purple) 51%, var(--purple) 60% , transparent 61% ) ,
+
+/* ======head */
+
+
+/* shadow-head-r====== */
+
+    radial-gradient( 12.875em 18.8125em at center -28% , transparent 46.5% , var(--d-blue) 47% , var(--d-blue) 48% , var(--purple) 48.5% ) ,
+
+/* ======shadow-head-r */
+
+
+/* shadow-head-1====== */
+
+    radial-gradient( 17.5625em 45.8125em at center -118% , transparent 45.5% , var(--d-blue) 46% , var(--d-blue) 48.8% , var(--purple) 49% ) ,
+
+/* ======shadow-head-1 */
+
+
+/* shadow-head-2====== */
+
+    radial-gradient( 19.5625em 28.6875em at center -16% , transparent 32% , var(--d-blue) 32.5% , var(--d-blue) 37.7% , var(--purple) 38% ) ,
+
+/* ======shadow-head-2 */
+
+
+/* u-ear====== */
+
+    linear-gradient(  var(--d-blue) 24%  , var(--purple) 0 , var(--purple) 66% , var(--d-blue) 0 ) ,
+
+/* ======u-ear */
+
+
+/* ear-l====== */
+
+    linear-gradient( 67deg , var(--d-blue) 47% , transparent 50% ) ,
+
+/* ======ear-l */
+
+
+/* ear-r====== */
+
+    linear-gradient( -67deg , var(--d-blue) 47% , transparent 50% ) ;
+
+/* ======ear-r */
+
+
+background-size: 
+
+
+/* brow-l-left====== */
+
+    2.8em 5em ,
+
+/* ======brow-l-left */
+
+
+/* brow-l-right====== */
+
+    2.8em 5em ,
+
+/* ======brow-l-right */
+
+
+/* brow-r-left====== */
+
+    2.1em 4em ,
+
+/* ======brow-r-left */
+
+
+/* brow-r-right====== */
+
+    2.1em 4em ,
+
+/* ======brow-r-right */
+
+
+/* mask-r====== */
+
+    10.45em 6em ,
+
+/* ======mask-r */
+
+
+/* mask-r-2====== */
+
+    10.45em 6em ,
+
+/* ======mask-r-2 */
+
+
+/* nose-l====== */
+
+    2.3em 1.5em ,
+
+/* ======nose-l */
+
+
+/* nose-r====== */
+
+    2.3em 1.5em ,
+
+/* ======nose-r */
+
+
+/* mask-r-shadow====== */
+
+    10.45em 6em ,
+
+/* ======mask-r-shadow */
+
+
+/* nose-l-shadow====== */
+
+    2.3em 1.5em ,
+
+/* ======nose-l-shadow */
+
+
+/* nose-r-shadow====== */
+
+    2.3em 1.5em ,
+
+/* ======nose-r-shadow */
+
+
+/* face====== */
+
+    10.45em 4.5em ,
+
+/* ======face *
+
+
+/* mouth====== */
+
+    2.55em 2.55em ,
+
+/* ======mouth *
+
+
+/* chin====== */
+
+    10.45em 5em ,
+
+/* ======chin */
+
+
+/* eye-l====== */
+
+    3.8em 3.8em ,
+
+/* ======eye-l *
+
+
+/* eye-r====== */
+
+    3.8em 3.8em ,
+
+/* ======eye-r *
+
+
+/* mask====== */
+
+    10.45em 4.7em ,
+
+/* ======mask */
+
+
+/* head====== */
+
+    16.2em 6.3em ,
+
+/* ======head */
+
+
+/* shadow-head-r====== */
+
+    16.2em 3.9em ,
+
+/* ======shadow-head-r */
+
+
+/* shadow-head-1====== */
+
+    16.2em 10.3em ,
+
+/* ======shadow-head-1 */
+
+
+/* shadow-head-2====== */
+
+    16.2em 10.3em ,
+
+/* ======shadow-head-2 */
+
+
+/* u-ear====== */
+
+    100% 19em ,
+
+/* ======u-ear */
+
+
+/* ear-l====== */
+
+    2.3em 5em ,
+
+/* ======ear-l */
+
+
+/* ear-r====== */
+
+    2.3em 5em ;
+
+/* ======ear-r */
+
+
+background-position: 
+
+
+/* brow-l-left====== */
+
+    var(--brow-l-left) ,
+
+/* ======brow-l-left */
+
+
+/* brow-l-right====== */
+
+    var(--brow-l-right) ,
+
+/* ======brow-l-right */
+
+
+/* brow-r-left====== */
+
+    17.4% 22.1% ,
+
+/* ======brow-r-left */
+
+
+/* brow-r-right====== */
+
+    82.6% 22.1% ,
+
+/* ======brow-r-right */
+
+
+/* mask-r====== */
+
+    50% 57.2% ,
+
+/* ======mask-r */
+
+
+/* mask-r-2====== */
+
+    50% 56.7% ,
+
+/* ======mask-r-2 */
+
+
+/* nose-l====== */
+
+    38.5% 66.7% ,
+
+/* ======nose-l */
+
+
+/* nose-r====== */
+
+    61.5% 66.7% ,
+
+/* ======nose-r */
+
+
+/* mask-r-shadow====== */
+
+    50% 60.5% ,
+
+/* ======mask-r-shadow */
+
+
+/* nose-l-shadow====== */
+
+    38.5% 69.7% ,
+
+/* ======nose-l-shadow */
+
+
+/* nose-r-shadow====== */
+
+    61.5% 69.7% ,
+
+/* ======nose-r-shadow */
+
+
+/* face====== */
+
+    50% 66% ,
+
+/* ======face */
+
+
+/* mouth====== */
+
+    50% 80.5% ,
+
+/* ======mouth */
+
+
+/* chin====== */
+
+    var(--chin) ,
+
+/* ======chin */
+
+
+/* eye-l====== */
+
+    12% 52% ,
+
+/* ======eye-l */
+
+
+/* eye-r====== */
+
+    88% 52% ,
+
+/* ======eye-r */
+
+
+/* mask====== */
+
+    var(--mask) ,
+
+/* ======mask */
+
+
+/* head====== */
+
+    50% 18.5% ,
+
+/* ======head */
+
+
+/* shadow-head-r====== */
+
+    50% 77.5% ,
+
+/* ======shadow-head-r */
+
+
+/* shadow-head-1====== */
+
+    50% 100% ,
+
+/* ======shadow-head-1 */
+
+
+/* shadow-head-2====== */
+
+    50% 100% ,
+
+/* ======shadow-head-2 */
+
+
+/* u-ear====== */
+
+    0 5em ,
+
+/* ======u-ear */
+
+
+/* ear-l====== */
+
+    0 0 ,
+
+/* ======ear-l */
+
+
+/* ear-r====== */
+
+    100% 0 ;
+
+/* ======ear-r */
+
+
+/* background-position====== */
+
+    --brow-l-left: 40.6% 25.5% ;
+    --brow-l-right: 59.6% 25.5% ;
+    --mask: 50% 49% ;
+    --chin: 50% 91% ;
+
+/* ======background-position */
+
+
+} 
+
+@media screen and (max-width: 38em) {
+
+body::before{
+
+    --brow-l-left: 39.8% 25.6% ;
+    --brow-l-right: 60.2% 25.6% ;
+    --mask: 50% 48.9% ;
+    --chin: 50% 90.8% ;
+
+}
+
+}
+
+@keyframes head {
+
+0% {
+
+    transform: rotate( 0deg ) translate3d( -0.625em , 0 , 0 ) rotate( 0deg ) ; 
+
+}
+
+100%{
+
+    transform: rotate( 360deg ) translate3d( -0.625em , 0 , 0 ) rotate( -360deg ) ;
+
+}
+
+}
+
+
+
+body::after{
+
+/* ===style=== */
+    content: "";
+    width: 40.05em;
+    height: 15em;
+    position: absolute;
+    background-repeat: no-repeat;
+    animation: hand 3.6s linear infinite ;
+    filter: drop-shadow(0 25px 0 #02020248);
+
+
+/* ===style=== */
+
+
+background-image: 
+
+
+/* hand-t====== */
+
+    linear-gradient( -3deg , var(--purple) 50% , transparent 51%) ,
+
+/* ======hand-t */
+
+
+/* hand-b====== */
+
+    linear-gradient( 3deg , transparent 55.2% , var(--purple) 56.4%) , 
+
+/* ======hand-b */
+
+
+/* forearm-t====== */
+
+    linear-gradient( 7.5deg , var(--purple) 50% , transparent 51%) ,
+
+/* ======forearm-t */
+
+
+/* forearm-b====== */
+
+    linear-gradient( -7.5deg , transparent 50% , var(--purple) 51%) ,
+
+/* ======forearm-b */
+
+
+/* gloves-l-1====== */
+
+    linear-gradient( 7.5deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-l-1 */
+
+
+/* gloves-s-1====== */
+
+    linear-gradient( 52deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-s-1 */
+
+
+/* gloves-1====== */
+
+    linear-gradient( 55deg , var(--purple) 50% , transparent 51%) ,
+
+/* ======gloves-1 */
+
+
+/* gloves-l-2====== */
+
+    linear-gradient( 7.5deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-l-2 */
+
+
+/* gloves-s-2====== */
+
+    linear-gradient( 54deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-s-2 */
+
+
+/* gloves-2====== */
+
+    linear-gradient( 54deg , var(--purple) 50% , transparent 51%) ,
+
+/* ======gloves-2 */
+
+
+/* gloves-l-3====== */
+
+    linear-gradient( 7.5deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-l-3 */
+
+
+/* gloves-s-3====== */
+
+    linear-gradient( 54deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-s-3 */
+
+
+/* gloves-3====== */
+
+    linear-gradient( 54deg , var(--purple) 50% , transparent 51%) ,
+
+/* ======gloves-3 */
+
+
+/* gloves-l-4====== */
+
+    linear-gradient( 7.5deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-l-4 */
+
+
+/* gloves-s-4====== */
+
+    linear-gradient( 51deg , var(--d-blue) 50% , transparent 54%) ,
+
+/* ======gloves-s-4 */
+
+
+/* gloves-4====== */
+
+    linear-gradient( 54deg , var(--purple) 50% , transparent 51%) ,
+
+/* ======gloves-4 */
+
+
+/* arm-t====== */
+
+    linear-gradient( 7.5deg , var(--pink) 50% , transparent 51%) ,
+
+/* ======arm-t */
+
+
+/* arm-b====== */
+
+    linear-gradient( -7.5deg , transparent 50% , var(--pink) 51%) ,
+
+/* ======arm-b */
+
+
+/* finger-1====== */
+
+    linear-gradient( -9deg , transparent 37% , var(--purple) 38% , var(--purple) 53%, transparent 54.3%) ,
+
+/* ======finger-1 */
+
+
+/* finger-r-1====== */
+
+    radial-gradient( circle at left 49%  , var(--purple) 40% , transparent 44%) ,
+
+/* ======finger-r-1 */
+
+
+/* finger-2====== */
+
+    linear-gradient( 9deg , transparent 37% , var(--purple) 38% , var(--purple) 52.5%, transparent 53.5%) ,
+
+/* ======finger-2 */
+
+
+/* finger-r-2====== */
+
+    radial-gradient( circle at left 54%  , var(--purple) 39% , transparent 43%) ,
+
+/* ======finger-r-2 */
+
+
+/* finger-3====== */
+
+    linear-gradient( 9deg , transparent 35.5% , var(--purple) 36.5% , var(--purple) 53%, transparent 54%) ,
+
+/* ======finger-3 */
+
+
+/* finger-r-3====== */
+
+    radial-gradient( circle at left 49%  , var(--purple) 38% , transparent 42%) ,
+
+/* ======finger-r-3 */
+
+
+/* finger-4====== */
+
+    linear-gradient( 9deg , transparent 35.5% , var(--purple) 36.5% , var(--purple) 53%, transparent 54%) ,
+
+/* ======finger-4 */
+
+
+/* finger-r-4====== */
+
+    radial-gradient( circle at left 51%  , var(--purple) 38% , transparent 42%) ;
+
+/* ======finger-r-4 */
+
+
+background-size: 
+
+
+/* hand-t====== */
+
+    7em 8em ,
+
+/* ======hand-t */
+
+
+/* hand-b====== */
+
+    7em 8em ,
+
+/* ======hand-b */
+
+
+/* forearm-t====== */
+
+    16.8em 8em ,
+
+/* ======forearm-t *
+
+
+/* forearm-b====== */
+
+    13.1em 8em ,
+
+/* ======forearm-b */
+
+
+/* gloves-l-1====== */
+
+    2.3em 1.7em ,  
+
+/* ======gloves-l-1 */
+
+
+/* gloves-s-1====== */
+
+    .7em .6em ,  
+
+/* ======gloves-s-1 */
+
+
+/* gloves-1====== */
+
+    3.6em 5.5em , 
+
+/* ======gloves-1 */
+
+
+/* gloves-l-2====== */
+
+    2.4em 1.7em ,  
+
+/* ======gloves-l-2 */
+
+
+/* gloves-s-2====== */
+
+    .7em .8em ,  
+
+/* ======gloves-s-2 */
+
+
+/* gloves-2====== */
+
+    3.6em 5.5em , 
+
+/* ======gloves-2 */
+
+
+/* gloves-l-3====== */
+
+    2.4em 1.7em ,  
+
+/* ======gloves-l-3 */
+
+
+/* gloves-s-3====== */
+
+    .7em .8em ,  
+
+/* ======gloves-s-3 */
+
+
+/* gloves-3====== */
+
+    3.6em 5.5em , 
+
+/* ======gloves-3 */
+
+
+/* gloves-l-4====== */
+
+    2.4em 1.7em ,  
+
+/* ======gloves-l-4 */
+
+
+/* gloves-s-4====== */
+
+    .7em .8em ,  
+
+/* ======gloves-s-4 */
+
+
+/* gloves-4====== */
+
+    3.6em 5.5em , 
+
+/* ======gloves-4 */
+
+
+/* arm-t====== */
+
+    14.1em 10.7em ,
+
+/* ======arm-t *
+
+
+/* arm-b====== */
+
+    14.1em 10.7em ,
+
+/* ======arm-b *
+
+
+/* finger-1====== */
+
+    6.9em 6em ,
+
+/* ======finger-1 */
+
+
+/* finger-r-1====== */
+
+    1.2em 1.2em ,
+
+/* ======finger-r-1 */
+
+
+/* finger-2====== */
+
+    6.9em 6em ,
+
+/* ======finger-2 */
+
+
+/* finger-r-2====== */
+
+    1.2em 1.2em ,
+
+/* ======finger-r-2 */
+
+
+/* finger-3====== */
+
+    2.6em 6em ,
+
+/* ======finger-3 */
+
+
+/* finger-r-3====== */
+
+    1.25em 1.25em ,
+
+/* ======finger-r-3 */
+
+
+/* finger-4====== */
+
+    2.6em 6em ,
+
+/* ======finger-4 */
+
+
+/* finger-r-4====== */
+
+    1.2em 1.2em ;
+
+/* ======finger-r-4 */
+
+
+background-position: 
+
+
+/* hand-t====== */
+
+    79.8% 18.8% ,
+
+/* ======hand-t */
+
+
+/* hand-b====== */
+
+    79.8% 106.5%  ,
+
+/* ======hand-b */
+
+
+/* forearm-t====== */
+
+    58.5% 12.2%  ,
+
+/* ======forearm-t */
+
+
+/* forearm-b====== */
+
+    50.5% 110.1%  ,
+
+/* ======forearm-b */
+
+
+/* gloves-l-1====== */
+
+    61.1% 27.6%    ,
+
+/* ======gloves-l-1 */
+
+
+/* gloves-s-1====== */
+
+    64.2% 32.5%  ,
+
+/* ======gloves-s-1 */
+
+
+/* gloves-1====== */
+
+    63.2% 12%   ,
+
+/* ======gloves-1 */
+
+
+/* gloves-l-2====== */
+
+    53.2% 24.7%    ,
+
+/* ======gloves-l-2 */
+
+
+/* gloves-s-2====== */
+
+    56.8% 30.2%  ,
+
+/* ======gloves-s-2 */
+
+
+/* gloves-2====== */
+
+    55% 7.4%    ,
+
+/* ======gloves-2 */
+
+
+/* gloves-l-3====== */
+
+    45.4% 21.7%    ,
+
+/* ======gloves-l-3 */
+
+
+/* gloves-s-3====== */
+
+    49.4% 27.7%  ,
+
+/* ======gloves-s-3 */
+
+
+/* gloves-3====== */
+
+    46.9% 3.5%   ,
+
+/* ======gloves-3 */
+
+
+/* gloves-l-4====== */
+
+    37.5% 18.7%    ,
+
+/* ======gloves-l-4 */
+
+
+/* gloves-s-4====== */
+
+    41.9% 24.6%  ,
+
+/* ======gloves-s-4 */
+
+
+/* gloves-4====== */
+
+    38.7% -0.7%    ,
+
+/* ======gloves-4 */
+
+
+/* arm-t====== */
+
+    -1.3% -57.1%  ,
+
+/* ======arm-t */
+
+
+/* arm-b====== */
+
+    -1% 188.6%   ,
+
+/* ======arm-b */
+
+
+/* finger-1====== */
+
+    98.3% 20.8% ,
+
+/* ======finger-1px */
+
+
+/* finger-r-1====== */
+
+    var(--finger-r-1) ,
+
+/* ======finger-r-1 */
+
+
+/* finger-2====== */
+
+    98.3% 48% ,
+
+/* ======finger-2 */
+
+
+/* finger-r-2====== */
+
+    101.6% 54.8% ,
+
+/* ======finger-r-2 */
+
+
+/* finger-3====== */
+
+    87.7% 64% ,
+
+/* ======finger-3 */
+
+
+/* finger-r-3====== */
+
+    var(--finger-r-3) ,
+
+/* ======finger-r-3 */
+
+
+/* finger-4====== */
+
+    87.7% 82.5% ,
+
+/* ======finger-4 */
+
+
+/* finger-r-4====== */
+
+    var(--finger-r-4) ;
+
+/* ======finger-r-4 */
+
+
+/* position====== */
+
+    --finger-r-1: 101.6% 29.4% ;
+    --finger-r-3: 91.5% 63.3% ;
+    --finger-r-4: 91.3% 75.1% ;
+
+/* ======position */
+
+
+}
+
+@keyframes hand {
+
+0%{
+
+    transform:  rotate(0deg) translate3d(-23em, 0, 0 ) rotate(0deg);
+    top: 32em;
+    left: -25em;
+
+}
+
+49%{
+
+    transform:  rotate(-360deg) translate3d(-23em, 0, 0 ) rotate(360deg);
+    top: 32em;
+    left: -25em;
+
+
+}
+
+49.5%{
+
+    top: 36em;
+
+}
+
+
+51%{
+
+    transform: scaleX(-1) rotate(0deg) translate3d(-23em, 0, 0 ) rotate(0deg);
+    left: 18em;
+    top: 32em;
+
+}
+
+100%{
+
+    transform: scaleX(-1) rotate(-360deg) translate3d(-23em, 0, 0 ) rotate(360deg) ;
+    left:  18em;
+    top: 32em;
+
+}
+
+}
+
+@media screen and (max-width: 38em){
+
+html{
+
+    font-size: .75em;
+
+}
+
+body::after{
+
+    --finger-r-1: 101.6% 29.3% ;
+    --finger-r-3: 91.3% 63.3% ;
+    --finger-r-4: 91% 75.1% ;
+
+
+}
+
+
+}
+
+    </style>
+</head>
+<body>
+
+</body>
+</html>
